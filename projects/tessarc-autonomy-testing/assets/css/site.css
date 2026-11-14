@@ -2185,6 +2185,11 @@ textarea.w-input, textarea.w-select {
   --_ui-styles---radius--medium: 1rem;
   --color-scheme-1--foreground: var(--_primitives---colors--ink-2);
   --_size---size--40-30: clamp(1.875rem, 3vw, 2.5rem);
+  --_size---size--64-40: clamp(2.5 * 1rem, ((2.5 - ((4 - 2.5) / (90 - 20) * 20)) * 1rem + ((4 - 2.5) / (90 - 20)) * 100vw), 4 * 1rem);
+  --_size---size--40-24: clamp(1.5rem, 3vw, 2.5rem);
+  --_spacing-sizing---container--text-20ch: 20ch;
+  --_size---size--24: 1.5rem;
+  --_typography---font-sizes--text-copy-19-17: clamp(1.0625rem, 1.3vw, 1.25rem);
   --_typography---font-sizes--text-large-21-19: clamp(1.1875rem, 1.5vw, 1.3125rem);
   --_spacing-sizing---padding--padding-section-small-48: var(--_size---size--48-32);
   --background-color--background-secondary\<deleted\|relume-variable-background-color-2\>: var(--base-color-neutral--neutral-lightest\<deleted\|relume-variable-color-neutral-3\>);
@@ -2198,7 +2203,6 @@ textarea.w-input, textarea.w-select {
   --_size---size--24-20: clamp(1.25 * 1rem, ((1.25 - ((1.5 - 1.25) / (90 - 20) * 20)) * 1rem + ((1.5 - 1.25) / (90 - 20)) * 100vw), 1.5 * 1rem);
   --_size---size--32-24: clamp(1.5 * 1rem, ((1.5 - ((2 - 1.5) / (90 - 20) * 20)) * 1rem + ((2 - 1.5) / (90 - 20)) * 100vw), 2 * 1rem);
   --_size---size--48-32: clamp(2 * 1rem, ((2 - ((3 - 2) / (90 - 20) * 20)) * 1rem + ((3 - 2) / (90 - 20)) * 100vw), 3 * 1rem);
-  --_size---size--64-40: clamp(2.5 * 1rem, ((2.5 - ((4 - 2.5) / (90 - 20) * 20)) * 1rem + ((4 - 2.5) / (90 - 20)) * 100vw), 4 * 1rem);
   --_size---size--80-48: clamp(3 * 1rem, ((3 - ((5 - 3) / (90 - 20) * 20)) * 1rem + ((5 - 3) / (90 - 20)) * 100vw), 5 * 1rem);
   --_size---size--96-56: clamp(3.5 * 1rem, ((3.5 - ((6 - 3.5) / (90 - 20) * 20)) * 1rem + ((6 - 3.5) / (90 - 20)) * 100vw), 6 * 1rem);
   --_size---size--112-64: clamp(4 * 1rem, ((4 - ((7 - 4) / (90 - 20) * 20)) * 1rem + ((7 - 4) / (90 - 20)) * 100vw), 7 * 1rem);
@@ -2212,14 +2216,10 @@ textarea.w-input, textarea.w-select {
   --_spacing-sizing---padding--padding-section-band-top-92: var(--_size---size--92);
   --_spacing-sizing---padding--padding-section-band-bottom-60: var(--_size---size--60);
   --_size---size--60: 3.75rem;
-  --_size---size--40-24: clamp(1.5rem, 3vw, 2.5rem);
   --_size---size--25: 1.5625rem;
   --_primitives---opacity--white-20: #fff3;
   --_primitives---colors--muted: #a09b95;
-  --_typography---font-sizes--text-copy-19-17: clamp(1.0625rem, 1.3vw, 1.25rem);
   --_spacing-sizing---container--text-wide: 67.5rem;
-  --_spacing-sizing---sizing--figure-min-width-phone: 55rem;
-  --_size---size--24: 1.5rem;
   --_size---size--28: 1.75rem;
   --_size---size--86-48: clamp(3rem, 6vw, 6rem);
   --_spacing-sizing---layout--text-indent-36: 36%;
@@ -2265,7 +2265,6 @@ textarea.w-input, textarea.w-select {
   --_size---size--64-40-slow: clamp(2.5rem, 5vw, 4rem);
   --_spacing-sizing---container--text-16ch: 16ch;
   --_typography---font-sizes--display-small-78-44: clamp(2.75rem, 5.4vw, 5rem);
-  --_spacing-sizing---container--text-20ch: 20ch;
   --_typography---font-sizes--display-medium-92-46: clamp(2.875rem, 6.4vw, 6rem);
   --_typography---font-sizes--text-subtitle-22-18: clamp(1.125rem, 1.5vw, 1.375rem);
   --_size---size--72-40-slow: clamp(2.5rem, 5vw, 4.5rem);
@@ -2290,7 +2289,6 @@ textarea.w-input, textarea.w-select {
   --_size---size--hero-stage-height: calc(min(clamp(35rem, 78vh, 48.75rem), calc(40vw + 6.875rem))  + var(--_size---size--hero-band-220-120));
   --_size---size--hero-stage-height-stacked: calc(57vw + var(--_size---size--hero-band-220-120));
   --_size---size--96-56-medium: clamp(3.5rem, 6vw, 6rem);
-  --_spacing-sizing---sizing--figure-min-width-phone-layer: 35rem;
   --_spacing-sizing---container--container-full: 100%;
   --_spacing-sizing---container--figure-min-width: 45rem;
   --_size---size--80-24: clamp(1.5 * 1rem, ((1.5 - ((5 - 1.5) / (90 - 20) * 20)) * 1rem + ((5 - 1.5) / (90 - 20)) * 100vw), 5 * 1rem);
@@ -2299,7 +2297,9 @@ textarea.w-input, textarea.w-select {
   --_size---size--48-20: clamp(1.25rem, 4vw, 3rem);
   --_spacing-sizing---sizing--figure-min-width-wide: 47.5rem;
   --_size---size--44-32: clamp(2 * 1rem, ((2 - ((2.75 - 2) / (90 - 20) * 20)) * 1rem + ((2.75 - 2) / (90 - 20)) * 100vw), 2.75 * 1rem);
+  --_spacing-sizing---sizing--figure-min-width-phone: 55rem;
   --_size---size--36-28: clamp(1.75 * 1rem, ((1.75 - ((2.25 - 1.75) / (90 - 20) * 20)) * 1rem + ((2.25 - 1.75) / (90 - 20)) * 100vw), 2.25 * 1rem);
+  --_spacing-sizing---sizing--figure-min-width-phone-layer: 35rem;
   --_size---size--28-24: clamp(1.5 * 1rem, ((1.5 - ((1.75 - 1.5) / (90 - 20) * 20)) * 1rem + ((1.75 - 1.5) / (90 - 20)) * 100vw), 1.75 * 1rem);
   --_size---size--22-20: clamp(1.25 * 1rem, ((1.25 - ((1.375 - 1.25) / (90 - 20) * 20)) * 1rem + ((1.375 - 1.25) / (90 - 20)) * 100vw), 1.375 * 1rem);
   --_size---size--20-18: clamp(1.125 * 1rem, ((1.125 - ((1.25 - 1.125) / (90 - 20) * 20)) * 1rem + ((1.25 - 1.125) / (90 - 20)) * 100vw), 1.25 * 1rem);
@@ -3549,6 +3549,10 @@ figcaption {
   display: flex;
 }
 
+.text-rich-text {
+  display: block;
+}
+
 .text-rich-text h1 {
   margin-top: 2rem;
   margin-bottom: 1rem;
@@ -3560,7 +3564,20 @@ figcaption {
   font-style: italic;
 }
 
-.text-rich-text h2, .text-rich-text h3, .text-rich-text h4 {
+.text-rich-text h2 {
+  max-width: var(--_spacing-sizing---container--text-20ch);
+  margin-top: var(--_size---size--64-40);
+  margin-bottom: var(--_size---size--40-24);
+  color: var(--_primitives---colors--warm-white);
+  font-size: var(--_typography---font-sizes--h2-52-32);
+  letter-spacing: -.028em;
+  text-wrap: balance;
+  font-weight: 600;
+  font-stretch: 104%;
+  line-height: 1.04;
+}
+
+.text-rich-text h3, .text-rich-text h4 {
   margin-top: 1.5rem;
   margin-bottom: 1rem;
 }
@@ -3571,7 +3588,12 @@ figcaption {
 }
 
 .text-rich-text p {
-  margin-bottom: 1rem;
+  margin-bottom: var(--_size---size--24);
+  font-size: var(--_typography---font-sizes--text-copy-19-17);
+}
+
+.text-rich-text a {
+  text-decoration: underline;
 }
 
 .text-rich-text figcaption {
@@ -4434,6 +4456,11 @@ figcaption {
   padding-bottom: var(--_size---size--60);
 }
 
+.padding-section-band.is-privacy {
+  padding-top: var(--_size---size--40-24);
+  padding-bottom: var(--_size---size--60);
+}
+
 .section-frame {
   position: relative;
 }
@@ -4493,11 +4520,6 @@ figcaption {
 .problem_figure {
   margin: var(--_size---size--0);
   position: relative;
-}
-
-.problem_figure-scroll {
-  width: 100%;
-  overflow-x: auto;
 }
 
 .eyebrow_component {
@@ -5019,10 +5041,6 @@ figcaption {
   margin: var(--_size---size--0);
 }
 
-.trust_figure-scroll {
-  overflow-x: auto;
-}
-
 .trust_figure-inner {
   width: 100%;
   position: relative;
@@ -5042,6 +5060,7 @@ figcaption {
   grid-column-gap: var(--_size---size--48);
   grid-row-gap: var(--_size---size--32);
   text-align: center;
+  grid-template-rows: auto;
   grid-template-columns: 1fr 1fr 1fr;
   display: grid;
 }
@@ -5200,11 +5219,7 @@ figcaption {
   position: relative;
 }
 
-.battle_figure-scroll {
-  overflow-x: auto;
-}
-
-.battle_figure-inner {
+.battle_figure-embed {
   width: 100%;
 }
 
@@ -5352,9 +5367,10 @@ figcaption {
   font-size: var(--_typography---font-sizes--hero-h1-54-32);
   letter-spacing: -.02em;
   text-wrap: balance;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
   font-weight: 700;
   line-height: 1.04;
-  display: grid;
 }
 
 .hero_line {
@@ -5475,6 +5491,11 @@ figcaption {
 
 .battle_layer-figure-embed {
   width: 100%;
+}
+
+.figure-mobile {
+  width: 100%;
+  display: none;
 }
 
 @media screen and (max-width: 991px) {
@@ -5804,6 +5825,7 @@ figcaption {
   .hero_heading {
     max-width: var(--_spacing-sizing---container--text-14ch);
     font-size: var(--_typography---font-sizes--hero-h1-stacked-72-40);
+    grid-template-columns: 1fr;
   }
 
   .spacer-hero-stage {
@@ -6048,10 +6070,6 @@ figcaption {
     right: var(--_size---size--12);
   }
 
-  .problem_figure-embed {
-    min-width: var(--_spacing-sizing---sizing--figure-min-width-phone);
-  }
-
   .careers_content {
     margin-left: var(--_size---size--0);
   }
@@ -6063,10 +6081,6 @@ figcaption {
   .footer_nav-link {
     padding-top: var(--_size---size--10);
     padding-bottom: var(--_size---size--10);
-  }
-
-  .trust_figure-inner {
-    min-width: var(--_spacing-sizing---sizing--figure-min-width-phone);
   }
 
   .trust_pillars, .trust_backed-list {
@@ -6081,20 +6095,17 @@ figcaption {
     margin-left: var(--_size---size--0);
   }
 
-  .battle_figure-inner {
-    min-width: var(--_spacing-sizing---sizing--figure-min-width-phone);
-  }
-
-  .battle_layer-figure {
-    overflow-x: auto;
+  .hero_stage {
+    height: auto;
+    padding-bottom: min(78vw, 380px);
   }
 
   .manifesto_component._2_col {
     grid-template-columns: 1fr;
   }
 
-  .battle_layer-figure-embed {
-    min-width: var(--_spacing-sizing---sizing--figure-min-width-phone-layer);
+  .figure-mobile {
+    display: block;
   }
 }
 
