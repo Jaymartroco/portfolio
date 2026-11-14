@@ -1,0 +1,21 @@
+<svg width="202" height="120" viewBox="0 0 202 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="84.334" cy="106.5" r="13.5" fill="#10182B"/>
+<path opacity="0.5" d="M200.048 40.0002L84.001 107L4.00098 60.8122M84.001 107L55.8663 2.00024M84.001 107L154.001 25.0002" stroke="#10182B"/>
+<path opacity="0.2" d="M168.001 98L84.001 107L47.001 51M84.001 107L95.001 28M84.001 107L115.001 53" stroke="#10182B" stroke-dasharray="3 2"/>
+<rect y="57.9998" width="6" height="6" fill="#C9622D"/>
+<rect x="52.002" width="6" height="6" fill="#C9622D"/>
+<rect x="44.001" y="48" width="6" height="6" fill="#C9622D"/>
+<rect x="92.001" y="26.0002" width="6" height="6" fill="#C9622D"/>
+<rect x="112.002" y="52" width="6" height="6" fill="#C9622D"/>
+<rect x="150" y="22" width="6" height="6" fill="#C9622D"/>
+<rect x="196.002" y="36" width="6" height="6" fill="#C9622D"/>
+<rect x="164.001" y="93.9998" width="6" height="6" fill="#C9622D"/>
+<path d="M40.001 48V44H44.001" stroke="#C9622D" stroke-width="0.5"/>
+<path d="M146.001 22V18H150.001" stroke="#C9622D" stroke-width="0.5"/>
+<path d="M40.001 53.9998V57.9998H44.001" stroke="#C9622D" stroke-width="0.5"/>
+<path d="M146.001 28V32H150.001" stroke="#C9622D" stroke-width="0.5"/>
+<path d="M54.001 48V44H50.001" stroke="#C9622D" stroke-width="0.5"/>
+<path d="M160 22V18H156" stroke="#C9622D" stroke-width="0.5"/>
+<path d="M54.001 53.9998V57.9998H50.001" stroke="#C9622D" stroke-width="0.5"/>
+<path d="M160 28V32H156" stroke="#C9622D" stroke-width="0.5"/>
+</svg>

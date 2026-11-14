@@ -1,0 +1,17 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M42 23H24V41H42V23Z" stroke="#10182B"/>
+<path d="M23 67L33 49L43 67H23Z" stroke="#10182B"/>
+<path d="M19 67H47" stroke="#10182B"/>
+<path d="M27 74V94" stroke="#10182B"/>
+<path d="M30 81H24V87H30V81Z" fill="#10182B"/>
+<path d="M33.7695 75.3301C35.087 76.3588 36.1527 77.6743 36.8857 79.1766C37.6187 80.6789 37.9997 82.3285 37.9997 84.0001C37.9997 85.6716 37.6187 87.3212 36.8857 88.8235C36.1527 90.3258 35.087 91.6413 33.7695 92.6701" stroke="#10182B"/>
+<path d="M38.6992 69.03C40.9729 70.8071 42.8119 73.0788 44.0767 75.6726C45.3415 78.2664 45.9988 81.1143 45.9988 84C45.9988 86.8858 45.3415 89.7336 44.0767 92.3275C42.8119 94.9213 40.9729 97.1929 38.6992 98.97" stroke="#10182B"/>
+<path d="M81 22V94" stroke="#10182B" stroke-width="1.4"/>
+<path d="M81 58H101" stroke="#10182B" stroke-width="1.4"/>
+<path d="M49 32H74" stroke="#9096A2" stroke-dasharray="4 4"/>
+<path d="M85 28H77V36H85V28Z" fill="#C9622D"/>
+<path d="M49 58H74" stroke="#9096A2" stroke-dasharray="4 4"/>
+<path d="M85 54H77V62H85V54Z" fill="#C9622D"/>
+<path d="M49 84H74" stroke="#9096A2" stroke-dasharray="4 4"/>
+<path d="M85 80H77V88H85V80Z" fill="#C9622D"/>
+</svg>

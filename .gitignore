@@ -1,0 +1,14 @@
+# OS / editor
+Thumbs.db
+Desktop.ini
+.DS_Store
+~$*
+*.tmp
+
+# Local tooling
+.claude/settings.local.json
+
+# Large raw recordings (upload to YouTube/Loom instead, or compress first)
+*.mov
+*.mkv
+assets/videos/raw/

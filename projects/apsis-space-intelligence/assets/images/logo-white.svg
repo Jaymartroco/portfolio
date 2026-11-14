@@ -1,0 +1,7 @@
+<svg width="224" height="48" viewBox="0 0 224 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="24" cy="24" r="21" stroke="#C9622D" stroke-width="3"/>
+<ellipse cx="24" cy="24" rx="20" ry="7.5" transform="rotate(-32 24 24)" stroke="#C9622D" stroke-width="2.2"/>
+<circle cx="24" cy="24" r="5" fill="#C9622D"/>
+<circle cx="40.2" cy="14.2" r="3.2" fill="#C9622D"/>
+<text x="58" y="37" fill="#FFFFFF" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="33" font-weight="700" letter-spacing="3">APSIS</text>
+</svg>
