@@ -4,195 +4,488 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jaymart Alayon | Webflow Developer</title>
-  <meta name="description" content="Jaymart Alayon is a Webflow developer with 3+ years building responsive, CMS-driven marketing websites for international clients.">
+  <meta name="description" content="Jaymart Alayon is a Webflow developer with 3+ years building responsive, CMS-driven marketing websites from Figma to launch for international clients.">
   <meta property="og:title" content="Jaymart Alayon | Webflow Developer">
   <meta property="og:description" content="Responsive, CMS-driven Webflow builds from Figma to launch. Selected work, rebuilt as NDA-safe duplicates.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/img/dunebright-solar.webp">
-  <meta name="theme-color" content="#0e0f12">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0b0b0d">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <!-- Mirrors Webflow's w-mod-js flag, which the data-anim pre-hide keys off (guide 6.5) -->
+  <script>document.documentElement.className += " w-mod-js";</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Instrument+Serif:ital@1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jaymart Alayon",
+    "jobTitle": "Webflow Developer",
+    "address": { "@type": "PostalAddress", "addressLocality": "Santa Rosa, Laguna", "addressCountry": "PH" },
+    "email": "mailto:jaymartalayon@gmail.com",
+    "sameAs": ["https://www.linkedin.com/in/jaymartroco/"],
+    "knowsAbout": ["Webflow", "Webflow CMS", "Client-First", "GSAP", "Figma to Webflow", "Technical SEO"]
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="nav">
-    <div class="container nav__inner">
-      <a href="#top" class="nav__logo" aria-label="Jaymart Alayon, home">
-        <span class="nav__mark">JA</span>
-        <span>Jaymart Alayon</span>
-      </a>
-      <nav aria-label="Primary">
-        <ul class="nav__links">
-          <li><a href="#work">Work</a></li>
-          <li><a href="#process">Process</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#skills">Skills</a></li>
-        </ul>
-      </nav>
-      <a href="#contact" class="btn btn--small">Contact</a>
-    </div>
-  </header>
+  <div class="page-wrapper">
 
-  <main id="main">
-    <!-- HERO -->
-    <section class="hero" id="top">
-      <div class="container">
-        <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Available for Webflow projects &amp; roles</p>
-        <h1 class="hero__title">Webflow developer turning Figma designs into <em>fast, scalable</em> sites clients can run themselves.</h1>
-        <p class="hero__lead">I'm Jaymart, a Webflow developer from the Philippines with 3+ years of experience at a German web agency and as an independent developer. I build responsive, CMS-driven marketing websites on a clean class system, with an AI-assisted workflow (Claude Code + Webflow MCP) that keeps every build quick and consistent.</p>
-        <div class="hero__actions">
-          <a href="#work" class="btn">View selected work</a>
-          <a href="#contact" class="btn btn--ghost">Get in touch</a>
-        </div>
-        <dl class="stats">
-          <div><dt>3+ yrs</dt><dd>Building in Webflow</dd></div>
-          <div><dt>40+ pages</dt><dd>Largest site audited &amp; cleaned up</dd></div>
-          <div><dt>1,100+</dt><dd>Styles standardised to Client-First</dd></div>
-          <div><dt>12</dt><dd>Stage-based build workflows</dd></div>
-        </dl>
-      </div>
-    </section>
-
-    <!-- WORK -->
-    <section class="section" id="work">
-      <div class="container">
-        <div class="section__head">
-          <p class="eyebrow">Selected work</p>
-          <h2>Projects built in Webflow</h2>
-        </div>
-
-        <aside class="notice" role="note" aria-labelledby="nda-title">
-          <div class="notice__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+    <!-- ============ Nav (component) ============ -->
+    <div class="nav_component" data-nav>
+      <div class="padding-global">
+        <div class="container-large">
+          <div class="nav_container">
+            <a href="#top" class="nav_logo-link" aria-label="Jaymart Alayon, back to top">
+              <img class="nav_logo" src="assets/img/brand/logo-mark.svg" alt="" width="36" height="36">
+              <span class="nav_logo-text">Jaymart Alayon</span>
+            </a>
+            <nav class="nav_menu" id="nav-menu" aria-label="Primary">
+              <a href="#work" class="nav_link">Work</a>
+              <a href="#services" class="nav_link">Process</a>
+              <a href="#about" class="nav_link">Experience</a>
+              <a href="#skills" class="nav_link">Toolkit</a>
+            </nav>
+            <div class="nav_right">
+              <div class="button-group nav_button">
+                <a href="#contact" class="button is-small">
+                  <span class="button_text">Let's talk</span>
+                  <span class="button_icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                </a>
+              </div>
+              <button class="nav_menu-button" type="button" aria-controls="nav-menu" aria-expanded="false" aria-label="Open menu" data-nav-toggle>
+                <span class="nav_menu-icon" aria-hidden="true"><span class="nav_menu-line"></span><span class="nav_menu-line"></span></span>
+              </button>
+            </div>
           </div>
-          <div>
-            <h3 id="nda-title">About these projects (NDA)</h3>
-            <p>Most of my client work is covered by non-disclosure agreements, so I can't link to the live client sites. The projects below are <strong>exported straight from Webflow</strong>. I duplicated each original project in Webflow and updated it so that <strong>no client details are present</strong>: brand names, logos, copy, contact details, people and data have been replaced with fictional content. The layouts, class system, CMS structure, components and interactions are the work I built.</p>
-            <p>Each project also has a <strong>Webflow Designer walkthrough</strong> recording, so you can see the build inside Webflow and that I'm the one who made it. Happy to walk through any of them live on a call.</p>
+        </div>
+      </div>
+    </div>
+
+    <main class="main-wrapper" id="main">
+
+      <!-- ============ Hero ============ -->
+      <header class="section_hero" id="top">
+        <div class="hero_grid" aria-hidden="true"></div>
+        <div class="hero_glow" aria-hidden="true"></div>
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-section-large is-nav-clearance is-bottom-reduced">
+              <div class="hero_component">
+                <div class="tagline is-pill" data-anim="hero"><span class="tagline_dot" aria-hidden="true"></span>Open to Webflow projects &amp; roles</div>
+                <div class="spacer-medium"></div>
+                <h1 class="heading-style-display hero_heading" data-split>Webflow sites your team can <span class="text-style-italic text-color-accent">actually</span> run.</h1>
+                <div class="spacer-large"></div>
+                <div class="hero_bottom">
+                  <p class="text-size-large text-color-muted max-width-large" data-anim="hero">I'm Jaymart, a Webflow developer from the Philippines with 3+ years at a German web agency and on my own. I turn Figma into fast, responsive, CMS-driven sites on a clean Client-First system, with an AI-assisted workflow that keeps every build consistent.</p>
+                  <div class="button-group" data-anim="hero-side">
+                    <a href="#work" class="button is-large">
+                      <span class="button_text">See selected work</span>
+                      <span class="button_icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg></span>
+                    </a>
+                    <a href="#contact" class="button is-secondary is-large"><span class="button_text">Get in touch</span></a>
+                  </div>
+                </div>
+                <div class="spacer-xlarge"></div>
+                <dl class="hero_stats" data-anim="stagger">
+                  <div class="hero_stat"><dt class="hero_stat-number">3+ yrs</dt><div class="spacer-xxsmall"></div><dd class="text-size-small text-color-muted">Building in Webflow</dd></div>
+                  <div class="hero_stat"><dt class="hero_stat-number">40+</dt><div class="spacer-xxsmall"></div><dd class="text-size-small text-color-muted">Pages in the largest site I audited &amp; cleaned up</dd></div>
+                  <div class="hero_stat"><dt class="hero_stat-number">1,100+</dt><div class="spacer-xxsmall"></div><dd class="text-size-small text-color-muted">Styles standardised to Client-First</dd></div>
+                  <div class="hero_stat"><dt class="hero_stat-number">12</dt><div class="spacer-xxsmall"></div><dd class="text-size-small text-color-muted">Stage-based build workflows</dd></div>
+                </dl>
+              </div>
+            </div>
           </div>
-        </aside>
-
-        <div class="projects" id="projects"><!-- rendered by assets/js/main.js --></div>
-        <noscript><p>Enable JavaScript to see the project list, or browse the <a href="projects/">projects folder</a>.</p></noscript>
-      </div>
-    </section>
-
-    <!-- PROCESS -->
-    <section class="section section--alt" id="process">
-      <div class="container">
-        <div class="section__head">
-          <p class="eyebrow">How I work</p>
-          <h2>From Figma handoff to launch</h2>
-          <p class="section__lead">I built my own AI-assisted delivery system with Claude Code and the Webflow MCP: a project starter, a development standards guide and 12 stage-based workflows. It makes every build faster and more consistent, without cutting corners on quality.</p>
         </div>
-        <ol class="steps">
-          <li><span>01</span><h3>Setup &amp; tokens</h3><p>Project kickoff, Figma review and design tokens mapped to Webflow Variables for colour, type and spacing.</p></li>
-          <li><span>02</span><h3>Build</h3><p>Pixel-accurate pages on a Client-First class system, with reusable components, props and variants.</p></li>
-          <li><span>03</span><h3>Responsive</h3><p>Every breakpoint designed for, not patched. Tested across browsers and real devices.</p></li>
-          <li><span>04</span><h3>CMS</h3><p>Collections clients can manage themselves: blogs, case studies, filters, location pages and FAQs.</p></li>
-          <li><span>05</span><h3>Interactions</h3><p>Webflow Interactions and GSAP (ScrollTrigger, SplitText), Lottie, Three.js and Canvas 2D when the brand calls for it.</p></li>
-          <li><span>06</span><h3>SEO, QA &amp; launch</h3><p>Meta titles, Open Graph, JSON-LD schema, alt text, image optimisation, visual QA and a clean launch.</p></li>
-        </ol>
-      </div>
-    </section>
+      </header>
 
-    <!-- EXPERIENCE -->
-    <section class="section" id="experience">
-      <div class="container">
-        <div class="section__head">
-          <p class="eyebrow">Experience</p>
-          <h2>Where I've built</h2>
-        </div>
-        <div class="timeline">
-          <article class="job">
-            <div class="job__meta"><p class="job__date">May 2025 – Present</p><p class="job__place">Remote</p></div>
-            <div>
-              <h3>Freelance Web Developer</h3>
-              <p class="job__role">Webflow, WordPress &amp; Wix Developer</p>
-              <ul>
-                <li>Deliver marketing websites end to end: Figma handoff, responsive build, CMS setup, interactions, SEO, QA and launch.</li>
-                <li>Build multi-page, CMS-driven sites with blogs, category filters, location pages, FAQs and data tables, plus custom features such as an interactive pricing calculator.</li>
-                <li>Automate repetitive build work with PowerShell and Python: Figma REST API exports, CSS-to-Webflow style conversion, AVIF optimisation and headless Chrome screenshots for visual QA.</li>
-                <li>Audit and clean up large existing sites (40+ pages, 1,100+ styles): Client-First naming, custom code moved out of embeds, styles bound to variables, accessibility fixes.</li>
-                <li>Integrate Google Analytics, Calendly, Zapier, Mailchimp, Klaviyo, Shopify (Smootify) and Finsweet Attributes; resolve client feedback through BugHerd.</li>
-              </ul>
+      <!-- ============ Showcase marquee ============ -->
+      <section class="section_showcase" aria-label="Project previews">
+        <div class="padding-section-small is-top-none">
+          <div class="showcase_component" data-anim="card">
+            <div class="showcase_group">
+              <a class="showcase_item" href="#work-dunebright"><img class="showcase_image" src="assets/img/dunebright-solar.webp" alt="Dunebright Solar homepage" width="1200" height="750"></a>
+              <a class="showcase_item" href="#work-apsis"><img class="showcase_image" src="assets/img/apsis-space-intelligence.webp" alt="Apsis homepage" width="1200" height="750"></a>
+              <a class="showcase_item" href="#work-tessarc"><img class="showcase_image" src="assets/img/tessarc-autonomy-testing.webp" alt="Tessarc homepage" width="1200" height="750"></a>
             </div>
-          </article>
-          <article class="job">
-            <div class="job__meta"><p class="job__date">Mar 2023 – Apr 2025</p><p class="job__place">Germany (Remote)</p></div>
-            <div>
-              <h3>Growmodo GmbH</h3>
-              <p class="job__role">Web Developer</p>
-              <ul>
-                <li>Developed and maintained Webflow and WordPress websites for international clients.</li>
-                <li>Converted Figma designs into clean, maintainable builds with structured class systems and consistent naming.</li>
-                <li>Built interactive UI components and animation systems aligned with each brand's guidelines.</li>
-                <li>Applied SEO best practices and Google Analytics insights; shipped features in agile sprints with designers, PMs and developers.</li>
-              </ul>
+            <div class="showcase_group" aria-hidden="true">
+              <a class="showcase_item" href="#work-dunebright" tabindex="-1"><img class="showcase_image" src="assets/img/dunebright-solar.webp" alt="" width="1200" height="750" loading="lazy"></a>
+              <a class="showcase_item" href="#work-apsis" tabindex="-1"><img class="showcase_image" src="assets/img/apsis-space-intelligence.webp" alt="" width="1200" height="750" loading="lazy"></a>
+              <a class="showcase_item" href="#work-tessarc" tabindex="-1"><img class="showcase_image" src="assets/img/tessarc-autonomy-testing.webp" alt="" width="1200" height="750" loading="lazy"></a>
             </div>
-          </article>
-          <article class="job">
-            <div class="job__meta"><p class="job__date">Dec 2019</p><p class="job__place">Laguna, Philippines</p></div>
-            <div>
-              <h3>Polytechnic University of the Philippines</h3>
-              <p class="job__role">BS Electronics and Communication Engineering</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ Tools marquee ============ -->
+      <section class="section_tools" aria-label="Tools I build with">
+        <div class="tools_component">
+          <ul class="tools_group">
+            <li class="tools_item">Webflow</li><li class="tools_item">Client-First</li><li class="tools_item">Figma</li><li class="tools_item">GSAP</li><li class="tools_item">Finsweet Attributes</li><li class="tools_item">Webflow CMS</li><li class="tools_item">Claude Code</li><li class="tools_item">Webflow MCP</li><li class="tools_item">Lottie</li><li class="tools_item">Relume</li>
+          </ul>
+          <ul class="tools_group" aria-hidden="true">
+            <li class="tools_item">Webflow</li><li class="tools_item">Client-First</li><li class="tools_item">Figma</li><li class="tools_item">GSAP</li><li class="tools_item">Finsweet Attributes</li><li class="tools_item">Webflow CMS</li><li class="tools_item">Claude Code</li><li class="tools_item">Webflow MCP</li><li class="tools_item">Lottie</li><li class="tools_item">Relume</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============ Work ============ -->
+      <section class="section_work" id="work">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-section-large">
+              <div class="work_component">
+                <div class="section-header_component">
+                  <div data-anim="slide-up">
+                    <div class="tagline">01 / Selected work</div>
+                    <div class="spacer-small"></div>
+                    <h2 class="heading-style-h1">Projects built in Webflow</h2>
+                  </div>
+                  <p class="text-size-medium text-color-muted" data-anim="slide-up">Three builds, exported straight from Webflow. Open any of them to click through every page, or watch the build inside the Designer.</p>
+                </div>
+                <div class="spacer-large"></div>
+                <aside class="work_note" role="note" aria-labelledby="nda-title" data-anim="slide-up">
+                  <span class="work_note-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></span>
+                  <div class="work_note-content">
+                    <h3 class="heading-style-h6" id="nda-title">About these projects (NDA)</h3>
+                    <div class="spacer-xxsmall"></div>
+                    <p class="text-size-small text-color-muted">Most of my client work is under NDA, so I can't link to the live sites. I duplicated each original project in Webflow and replaced <strong>every client detail</strong> (names, logos, copy, people and data) with fictional content. The layouts, class system, CMS structure, components and interactions are the work I built. Each one also gets a <strong>Webflow Designer walkthrough</strong>, and I'm happy to go through any of them live on a call.</p>
+                  </div>
+                </aside>
+                <div class="spacer-medium"></div>
+
+                <!-- Stands in for a CMS Collection List: one work_card per project -->
+                <div class="work_list">
+
+                  <article class="work_card" id="work-dunebright" data-anim="card" data-project="dunebright-solar">
+                    <a class="work_image-wrapper" href="projects/dunebright-solar/index.html" target="_blank" rel="noopener" aria-label="Open the Dunebright Solar export in a new tab">
+                      <img class="work_image" src="assets/img/dunebright-solar.webp" alt="Homepage of the Dunebright Solar Webflow build" width="1200" height="750" loading="lazy">
+                      <span class="work_image-badge">Webflow export · NDA-safe</span>
+                      <span class="work_image-cta" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+                    </a>
+                    <div class="work_content">
+                      <div class="work_meta text-size-small text-style-mono"><span class="text-color-muted">Local services · Lead gen · 22 pages</span><span class="work_number">01</span></div>
+                      <div class="spacer-small"></div>
+                      <h3 class="heading-style-h3">Dunebright Solar</h3>
+                      <div class="spacer-xsmall"></div>
+                      <p class="text-color-muted">A 20+ page marketing site for a solar panel cleaning company, built for local SEO and lead capture. Two CMS collections power the blog and case studies, and a custom calculator estimates the output dirty panels are costing.</p>
+                      <div class="spacer-small"></div>
+                      <ul class="work_highlights">
+                        <li class="work_highlight">Blog and Case Studies CMS with Finsweet filters and load-more</li>
+                        <li class="work_highlight">Interactive savings and pricing calculator</li>
+                        <li class="work_highlight">Services, service areas, FAQ, reviews and warranty pages</li>
+                        <li class="work_highlight">GSAP ScrollTrigger reveals, unique meta and AVIF imagery</li>
+                      </ul>
+                      <div class="spacer-medium"></div>
+                      <ul class="chip_list"><li class="chip_item">Webflow CMS</li><li class="chip_item">Finsweet</li><li class="chip_item">Calculator</li><li class="chip_item">GSAP</li><li class="chip_item">Local SEO</li></ul>
+                      <div class="spacer-medium"></div>
+                      <div class="button-group work_actions" data-actions></div>
+                    </div>
+                  </article>
+
+                  <article class="work_card" id="work-apsis" data-anim="card" data-project="apsis-space-intelligence">
+                    <a class="work_image-wrapper" href="projects/apsis-space-intelligence/index.html" target="_blank" rel="noopener" aria-label="Open the Apsis export in a new tab">
+                      <img class="work_image" src="assets/img/apsis-space-intelligence.webp" alt="Homepage of the Apsis Webflow build" width="1200" height="750" loading="lazy">
+                      <span class="work_image-badge">Webflow export · NDA-safe</span>
+                      <span class="work_image-cta" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+                    </a>
+                    <div class="work_content">
+                      <div class="work_meta text-size-small text-style-mono"><span class="text-color-muted">Aerospace · B2B tech · 10 pages</span><span class="work_number">02</span></div>
+                      <div class="spacer-small"></div>
+                      <h3 class="heading-style-h3">Apsis</h3>
+                      <div class="spacer-xsmall"></div>
+                      <p class="text-color-muted">A 10-page corporate site for a space intelligence company. Product, solution and company pages share one component system, with editorial typography, motion-led storytelling and filterable news.</p>
+                      <div class="spacer-small"></div>
+                      <ul class="work_highlights">
+                        <li class="work_highlight">Mega-menu navigation across Technology, Solutions and Company</li>
+                        <li class="work_highlight">GSAP SplitText and ScrollTrigger headline animations</li>
+                        <li class="work_highlight">Swiper sliders and a Finsweet-filtered Stories list</li>
+                        <li class="work_highlight">Careers, offices and team built from reusable components</li>
+                      </ul>
+                      <div class="spacer-medium"></div>
+                      <ul class="chip_list"><li class="chip_item">Components</li><li class="chip_item">GSAP SplitText</li><li class="chip_item">Swiper</li><li class="chip_item">Finsweet</li><li class="chip_item">Responsive</li></ul>
+                      <div class="spacer-medium"></div>
+                      <div class="button-group work_actions" data-actions></div>
+                    </div>
+                  </article>
+
+                  <article class="work_card" id="work-tessarc" data-anim="card" data-project="tessarc-autonomy-testing">
+                    <a class="work_image-wrapper" href="projects/tessarc-autonomy-testing/index.html" target="_blank" rel="noopener" aria-label="Open the Tessarc export in a new tab">
+                      <img class="work_image" src="assets/img/tessarc-autonomy-testing.webp" alt="Homepage of the Tessarc Webflow build" width="1200" height="750" loading="lazy">
+                      <span class="work_image-badge">Webflow export · NDA-safe</span>
+                      <span class="work_image-cta" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+                    </a>
+                    <div class="work_content">
+                      <div class="work_meta text-size-small text-style-mono"><span class="text-color-muted">Robotics · Deep tech · 4 pages</span><span class="work_number">03</span></div>
+                      <div class="spacer-small"></div>
+                      <h3 class="heading-style-h3">Tessarc</h3>
+                      <div class="spacer-xsmall"></div>
+                      <p class="text-color-muted">A dark, technical landing site for an autonomy testing and validation company. The hero is an animated line-art scene, and long-form manifesto content is paced with scroll-driven motion.</p>
+                      <div class="spacer-small"></div>
+                      <ul class="work_highlights">
+                        <li class="work_highlight">Animated SVG and canvas hero illustration</li>
+                        <li class="work_highlight">Scroll-driven storytelling with GSAP ScrollTrigger</li>
+                        <li class="work_highlight">Custom consent banner that keeps analytics off until allowed</li>
+                        <li class="work_highlight">Lightweight: under 1.5 MB including assets</li>
+                      </ul>
+                      <div class="spacer-medium"></div>
+                      <ul class="chip_list"><li class="chip_item">Animated SVG</li><li class="chip_item">GSAP</li><li class="chip_item">Landing page</li><li class="chip_item">Accessibility</li></ul>
+                      <div class="spacer-medium"></div>
+                      <div class="button-group work_actions" data-actions></div>
+                    </div>
+                  </article>
+
+                </div>
+              </div>
             </div>
-          </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ Services / process (light scheme) ============ -->
+      <section class="section_services section-style-light" id="services">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-section-large">
+              <div class="services_component">
+                <div class="section-header_component">
+                  <div data-anim="slide-up">
+                    <div class="tagline"><span class="tagline_dot" aria-hidden="true"></span>02 / How I work</div>
+                    <div class="spacer-small"></div>
+                    <h2 class="heading-style-h1">From Figma handoff to launch</h2>
+                  </div>
+                  <p class="text-size-medium text-color-muted" data-anim="slide-up">I built my own delivery system with Claude Code and the Webflow MCP: a project starter, a development standards guide and 12 stage-based workflows. Faster builds, without cutting corners.</p>
+                </div>
+                <div class="spacer-xlarge"></div>
+                <ol class="services_list" data-anim="stagger">
+                  <li class="services_card">
+                    <div class="services_card-top"><span class="services_icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9 7 7M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/></svg></span><span class="services_number">01</span></div>
+                    <div class="spacer-large"></div>
+                    <h3 class="heading-style-h5">Setup &amp; tokens</h3>
+                    <div class="spacer-xxsmall"></div>
+                    <p class="text-size-small text-color-muted">Kickoff, Figma review and design tokens mapped to Webflow Variables for colour, type and fluid spacing.</p>
+                  </li>
+                  <li class="services_card">
+                    <div class="services_card-top"><span class="services_icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span><span class="services_number">02</span></div>
+                    <div class="spacer-large"></div>
+                    <h3 class="heading-style-h5">Build</h3>
+                    <div class="spacer-xxsmall"></div>
+                    <p class="text-size-small text-color-muted">Pixel-accurate pages on a Client-First class system, with reusable components, props and variants.</p>
+                  </li>
+                  <li class="services_card">
+                    <div class="services_card-top"><span class="services_icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="14" height="11" rx="1.5"/><rect x="15" y="9" width="7" height="11" rx="1.5"/><path d="M6 19h6"/></svg></span><span class="services_number">03</span></div>
+                    <div class="spacer-large"></div>
+                    <h3 class="heading-style-h5">Responsive</h3>
+                    <div class="spacer-xxsmall"></div>
+                    <p class="text-size-small text-color-muted">Every breakpoint designed for, not patched. Fluid sizes, layout-only overrides, tested on real devices.</p>
+                  </li>
+                  <li class="services_card">
+                    <div class="services_card-top"><span class="services_icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></span><span class="services_number">04</span></div>
+                    <div class="spacer-large"></div>
+                    <h3 class="heading-style-h5">CMS</h3>
+                    <div class="spacer-xxsmall"></div>
+                    <p class="text-size-small text-color-muted">Collections clients can run themselves: blogs, case studies, filters, location pages and FAQs.</p>
+                  </li>
+                  <li class="services_card">
+                    <div class="services_card-top"><span class="services_icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17c3-8 6-8 9 0s6 8 9 0"/><circle cx="7.5" cy="9" r="1.5"/></svg></span><span class="services_number">05</span></div>
+                    <div class="spacer-large"></div>
+                    <h3 class="heading-style-h5">Interactions</h3>
+                    <div class="spacer-xxsmall"></div>
+                    <p class="text-size-small text-color-muted">Webflow Interactions and GSAP (ScrollTrigger, SplitText), plus Lottie, Three.js and Canvas when the brand calls for it.</p>
+                  </li>
+                  <li class="services_card">
+                    <div class="services_card-top"><span class="services_icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></span><span class="services_number">06</span></div>
+                    <div class="spacer-large"></div>
+                    <h3 class="heading-style-h5">SEO, QA &amp; launch</h3>
+                    <div class="spacer-xxsmall"></div>
+                    <p class="text-size-small text-color-muted">Meta titles, Open Graph, JSON-LD, alt text, image optimisation, visual QA and a clean launch.</p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ About / experience ============ -->
+      <section class="section_about" id="about">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-section-large">
+              <div class="about_component">
+                <div class="about_content" data-anim="slide-up">
+                  <div class="tagline">03 / Experience</div>
+                  <div class="spacer-small"></div>
+                  <h2 class="heading-style-h1">Where I've built</h2>
+                  <div class="spacer-small"></div>
+                  <p class="text-size-medium text-color-muted">Two years shipping Webflow and WordPress sites for international clients at a German agency, then independent work end to end, from Figma handoff to launch.</p>
+                  <div class="spacer-medium"></div>
+                  <a class="about_link" id="linkedin-link" href="https://www.linkedin.com/in/jaymartroco/" target="_blank" rel="noopener">View my LinkedIn ↗</a>
+                </div>
+                <div class="about_list">
+                  <article class="about_item" data-anim="slide-up">
+                    <div class="about_item-meta"><p class="text-size-small text-style-mono">May 2025 – Present</p><p class="text-size-small text-color-muted">Remote</p></div>
+                    <div>
+                      <h3 class="heading-style-h4">Freelance Web Developer</h3>
+                      <div class="spacer-tiny"></div>
+                      <p class="text-color-accent text-weight-medium">Webflow, WordPress &amp; Wix</p>
+                      <div class="spacer-small"></div>
+                      <ul class="about_item-points">
+                        <li class="about_item-point">Deliver marketing sites end to end: Figma handoff, responsive build, CMS, interactions, SEO, QA and launch.</li>
+                        <li class="about_item-point">Build CMS-driven sites with blogs, category filters, location pages, FAQs and data tables, plus custom features like an interactive pricing calculator.</li>
+                        <li class="about_item-point">Automate build work with PowerShell and Python: Figma REST exports, CSS-to-Webflow conversion, AVIF optimisation and headless visual QA.</li>
+                        <li class="about_item-point">Audit and clean up large sites (40+ pages, 1,100+ styles): Client-First naming, code moved out of embeds, styles bound to variables, accessibility fixes.</li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="about_item" data-anim="slide-up">
+                    <div class="about_item-meta"><p class="text-size-small text-style-mono">Mar 2023 – Apr 2025</p><p class="text-size-small text-color-muted">Germany (Remote)</p></div>
+                    <div>
+                      <h3 class="heading-style-h4">Growmodo GmbH</h3>
+                      <div class="spacer-tiny"></div>
+                      <p class="text-color-accent text-weight-medium">Web Developer</p>
+                      <div class="spacer-small"></div>
+                      <ul class="about_item-points">
+                        <li class="about_item-point">Developed and maintained Webflow and WordPress sites for international clients.</li>
+                        <li class="about_item-point">Converted Figma designs into clean, maintainable builds with structured class systems.</li>
+                        <li class="about_item-point">Built interactive UI components and animation systems aligned with each brand.</li>
+                        <li class="about_item-point">Applied SEO best practice and shipped in agile sprints with designers, PMs and developers.</li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="about_item" data-anim="slide-up">
+                    <div class="about_item-meta"><p class="text-size-small text-style-mono">Dec 2019</p><p class="text-size-small text-color-muted">Philippines</p></div>
+                    <div>
+                      <h3 class="heading-style-h4">Polytechnic University of the Philippines</h3>
+                      <div class="spacer-tiny"></div>
+                      <p class="text-color-accent text-weight-medium">BS Electronics and Communication Engineering</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ Skills ============ -->
+      <section class="section_skills" id="skills">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-section-large is-top-none">
+              <div class="skills_component">
+                <div class="section-header_component">
+                  <div data-anim="slide-up">
+                    <div class="tagline">04 / Toolkit</div>
+                    <div class="spacer-small"></div>
+                    <h2 class="heading-style-h1">Skills &amp; tools</h2>
+                  </div>
+                  <p class="text-size-medium text-color-muted" data-anim="slide-up">Webflow first, with the front-end, motion and SEO depth to take a site from design file to launch on my own.</p>
+                </div>
+                <div class="spacer-xlarge"></div>
+                <div class="skills_list" data-anim="stagger">
+                  <div class="skills_card"><h3 class="heading-style-h6">Webflow</h3><div class="spacer-small"></div><ul class="chip_list"><li class="chip_item">CMS architecture</li><li class="chip_item">Client-First</li><li class="chip_item">Relume</li><li class="chip_item">Finsweet Attributes</li><li class="chip_item">Variables</li><li class="chip_item">Components &amp; props</li><li class="chip_item">Interactions</li></ul></div>
+                  <div class="skills_card"><h3 class="heading-style-h6">Platforms</h3><div class="spacer-small"></div><ul class="chip_list"><li class="chip_item">Webflow</li><li class="chip_item">WordPress (Elementor, Bricks, Divi, Avada)</li><li class="chip_item">Wix (Velo)</li><li class="chip_item">Shopify (Smootify)</li></ul></div>
+                  <div class="skills_card"><h3 class="heading-style-h6">Front-end</h3><div class="spacer-small"></div><ul class="chip_list"><li class="chip_item">HTML</li><li class="chip_item">CSS</li><li class="chip_item">JavaScript</li><li class="chip_item">jQuery</li><li class="chip_item">PHP</li><li class="chip_item">Responsive</li><li class="chip_item">Cross-browser</li></ul></div>
+                  <div class="skills_card"><h3 class="heading-style-h6">Motion</h3><div class="spacer-small"></div><ul class="chip_list"><li class="chip_item">GSAP ScrollTrigger</li><li class="chip_item">SplitText</li><li class="chip_item">Lottie</li><li class="chip_item">Three.js</li><li class="chip_item">Canvas 2D</li><li class="chip_item">Animated SVG</li></ul></div>
+                  <div class="skills_card"><h3 class="heading-style-h6">SEO &amp; performance</h3><div class="spacer-small"></div><ul class="chip_list"><li class="chip_item">Technical SEO</li><li class="chip_item">JSON-LD</li><li class="chip_item">Open Graph</li><li class="chip_item">Accessibility</li><li class="chip_item">Image optimisation</li><li class="chip_item">Google Analytics</li></ul></div>
+                  <div class="skills_card"><h3 class="heading-style-h6">AI &amp; tools</h3><div class="spacer-small"></div><ul class="chip_list"><li class="chip_item">Claude Code</li><li class="chip_item">Webflow MCP</li><li class="chip_item">Figma MCP</li><li class="chip_item">Figma</li><li class="chip_item">PowerShell</li><li class="chip_item">Python</li><li class="chip_item">Zapier</li><li class="chip_item">BugHerd</li><li class="chip_item">Git</li></ul></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CTA ============ -->
+      <section class="section_cta" id="contact">
+        <div class="cta_glow" aria-hidden="true"></div>
+        <div class="padding-global">
+          <div class="container-medium">
+            <div class="padding-section-large">
+              <div class="cta_component">
+                <div class="tagline is-pill" data-anim="slide-up"><span class="tagline_dot" aria-hidden="true"></span>05 / Contact</div>
+                <div class="spacer-medium"></div>
+                <h2 class="heading-style-display cta_heading" data-anim="display">Have a Webflow project <span class="text-style-italic text-color-accent">in mind?</span></h2>
+                <div class="spacer-medium"></div>
+                <p class="text-size-large text-color-muted max-width-medium" data-anim="slide-up">Tell me about it. I'm happy to walk you through any of these builds in the Webflow Designer on a call.</p>
+                <div class="spacer-large"></div>
+                <div class="button-group is-center" data-anim="slide-up">
+                  <a class="button is-large" href="mailto:jaymartalayon@gmail.com">
+                    <span class="button_text">jaymartalayon@gmail.com</span>
+                    <span class="button_icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                  </a>
+                  <a class="button is-secondary is-large" href="https://www.linkedin.com/in/jaymartroco/" target="_blank" rel="noopener" data-linkedin><span class="button_text">LinkedIn</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ Footer (component) ============ -->
+    <footer class="footer_component">
+      <div class="padding-global">
+        <div class="container-large">
+          <div class="padding-section-medium is-bottom-reduced">
+            <div class="footer_top">
+              <div class="footer_brand">
+                <img class="footer_logo" src="assets/img/brand/logo-mark.svg" alt="" width="48" height="48">
+                <div class="spacer-small"></div>
+                <p class="text-size-small text-color-muted max-width-small">Webflow developer building fast, scalable marketing sites from Figma to launch.</p>
+              </div>
+              <div>
+                <p class="text-size-tiny text-style-mono text-style-allcaps text-color-muted">Navigate</p>
+                <div class="spacer-xsmall"></div>
+                <ul class="footer_list text-size-small">
+                  <li><a class="footer_link" href="#work">Work</a></li>
+                  <li><a class="footer_link" href="#services">Process</a></li>
+                  <li><a class="footer_link" href="#about">Experience</a></li>
+                  <li><a class="footer_link" href="#skills">Toolkit</a></li>
+                </ul>
+              </div>
+              <div>
+                <p class="text-size-tiny text-style-mono text-style-allcaps text-color-muted">Connect</p>
+                <div class="spacer-xsmall"></div>
+                <ul class="footer_list text-size-small">
+                  <li><a class="footer_link" href="mailto:jaymartalayon@gmail.com">Email</a></li>
+                  <li><a class="footer_link" href="https://www.linkedin.com/in/jaymartroco/" target="_blank" rel="noopener" data-linkedin>LinkedIn</a></li>
+                </ul>
+              </div>
+              <div>
+                <p class="text-size-tiny text-style-mono text-style-allcaps text-color-muted">Local time</p>
+                <div class="spacer-xsmall"></div>
+                <p class="text-size-small"><span data-local-time>Philippines</span><br><span class="text-color-muted">Santa Rosa, Laguna, PH</span></p>
+              </div>
+            </div>
+            <div class="spacer-xxlarge"></div>
+            <p class="footer_wordmark" aria-hidden="true" data-anim="display">Jaymart<span class="footer_wordmark-dot">.</span></p>
+            <div class="spacer-medium"></div>
+            <div class="footer_bottom text-size-small text-color-muted">
+              <p>&copy; <span data-year>2026</span> Jaymart Roco Alayon. Project content is fictional and NDA-safe.</p>
+              <a class="footer_link" href="#top">Back to top ↑</a>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </footer>
 
-    <!-- SKILLS -->
-    <section class="section section--alt" id="skills">
-      <div class="container">
-        <div class="section__head">
-          <p class="eyebrow">Toolkit</p>
-          <h2>Skills &amp; tools</h2>
-        </div>
-        <div class="skills">
-          <div><h3>Webflow</h3><ul class="chips"><li>CMS Architecture</li><li>Client-First</li><li>Relume</li><li>Finsweet Attributes</li><li>Variables</li><li>Components &amp; Props</li><li>Interactions</li></ul></div>
-          <div><h3>Platforms</h3><ul class="chips"><li>Webflow</li><li>WordPress (Elementor, Bricks, Divi, Avada)</li><li>Wix (Velo)</li><li>Shopify (Smootify)</li></ul></div>
-          <div><h3>Front-end</h3><ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>jQuery</li><li>PHP</li><li>Responsive design</li><li>Cross-browser</li></ul></div>
-          <div><h3>Motion</h3><ul class="chips"><li>GSAP ScrollTrigger</li><li>Lottie</li><li>Three.js</li><li>Canvas 2D</li><li>Animated SVG</li></ul></div>
-          <div><h3>SEO &amp; performance</h3><ul class="chips"><li>Technical SEO</li><li>JSON-LD</li><li>Open Graph</li><li>Accessibility</li><li>Image optimisation</li><li>Google Analytics</li></ul></div>
-          <div><h3>AI &amp; tools</h3><ul class="chips"><li>Claude Code</li><li>Webflow MCP</li><li>Figma MCP</li><li>Figma</li><li>PowerShell</li><li>Python</li><li>Zapier</li><li>BugHerd</li><li>Git</li><li>Notion</li></ul></div>
-        </div>
+    <!-- Video modal: native <dialog> (guide 4.12) -->
+    <dialog class="modal_component" id="video-modal" aria-labelledby="modal-title">
+      <div class="modal_header">
+        <h2 class="heading-style-h6" id="modal-title">Webflow Designer walkthrough</h2>
+        <button class="modal_close" type="button" aria-label="Close video"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
       </div>
-    </section>
+      <div class="modal_body" id="modal-body"></div>
+    </dialog>
 
-    <!-- CONTACT -->
-    <section class="section contact" id="contact">
-      <div class="container contact__inner">
-        <p class="eyebrow">Contact</p>
-        <h2>Have a Webflow project or role in mind?</h2>
-        <p class="section__lead">I'm happy to walk you through any of these builds in the Webflow Designer on a call.</p>
-        <div class="hero__actions">
-          <a class="btn" href="mailto:jaymartalayon@gmail.com">jaymartalayon@gmail.com</a>
-          <a class="btn btn--ghost" id="linkedin-link" href="#" target="_blank" rel="noopener" hidden>LinkedIn</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer__inner">
-      <p>&copy; <span id="year">2026</span> Jaymart Roco Alayon. Santa Rosa, Laguna, PH.</p>
-      <p>Project content is fictional and NDA-safe.</p>
-    </div>
-  </footer>
-
-  <!-- Video modal -->
-  <dialog class="modal" id="video-modal" aria-labelledby="modal-title">
-    <div class="modal__head">
-      <h3 id="modal-title">Webflow Designer walkthrough</h3>
-      <button class="modal__close" type="button" aria-label="Close video">&times;</button>
-    </div>
-    <div class="modal__body" id="modal-body"></div>
-  </dialog>
+  </div>
 
   <script src="assets/js/projects.js"></script>
   <script src="assets/js/main.js"></script>
