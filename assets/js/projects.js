@@ -9,7 +9,7 @@
     Leave it as "" and the card shows "Walkthrough coming soon".
 */
 window.SITE = {
-  linkedin: "" // e.g. "https://www.linkedin.com/in/your-handle/" — the LinkedIn button appears once this is filled in
+  linkedin: "https://www.linkedin.com/in/jaymartroco/" // the LinkedIn button in Contact appears when this is filled in
 };
 
 window.PROJECTS = [
