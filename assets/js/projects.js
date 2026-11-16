@@ -28,5 +28,10 @@ window.PROJECTS = {
     name: "Tessarc",
     url: "projects/tessarc-autonomy-testing/index.html",
     video: ""
+  },
+  "veylor-capital-partners": {
+    name: "Veylor Capital Partners",
+    url: "projects/veylor-capital-partners/index.html",
+    video: ""
   }
 };
