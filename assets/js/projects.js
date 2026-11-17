@@ -22,7 +22,7 @@ window.PROJECTS = {
   "apsis-space-intelligence": {
     name: "Apsis",
     url: "projects/apsis-space-intelligence/index.html",
-    video: ""
+    video: "assets/videos/apsis-designer.mp4"
   },
   "tessarc-autonomy-testing": {
     name: "Tessarc",
