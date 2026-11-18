@@ -33,5 +33,30 @@ window.PROJECTS = {
     name: "Veylor Capital Partners",
     url: "projects/veylor-capital-partners/index.html",
     video: ""
+  },
+  "northwatch-safety": {
+    name: "Northwatch Safety",
+    url: "projects/northwatch-safety/index.html",
+    video: ""
+  },
+  "nocta-events": {
+    name: "NOCTA Events",
+    url: "projects/nocta-events/index.html",
+    video: ""
+  },
+  "larkspur-salon": {
+    name: "Larkspur Salon",
+    url: "projects/larkspur-salon/index.html",
+    video: ""
+  },
+  "kestrel-point-advisors": {
+    name: "Kestrel Point Advisors",
+    url: "projects/kestrel-point-advisors/index.html",
+    video: ""
+  },
+  "cedarline-sitework": {
+    name: "Cedarline Sitework",
+    url: "projects/cedarline-sitework/index.html",
+    video: ""
   }
 };
