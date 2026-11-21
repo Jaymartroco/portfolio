@@ -80,14 +80,14 @@
               <div class="hero_component">
                 <div class="tagline is-pill" data-anim="hero"><span class="tagline_dot" aria-hidden="true"></span>Open to Webflow projects &amp; roles</div>
                 <div class="spacer-medium"></div>
-                <h1 class="heading-style-display hero_heading" data-split>Webflow sites your team can <span class="text-style-italic text-color-accent">actually</span> run.</h1>
+                <h1 class="heading-style-display hero_heading" data-split="blur-highlight">Webflow sites your team can <span class="text-style-italic hero_highlight">actually</span> run.</h1>
                 <div class="spacer-large"></div>
                 <div class="hero_bottom">
                   <p class="text-size-large text-color-muted max-width-large" data-anim="hero">I'm Jaymart, a Webflow developer from the Philippines with 3+ years at a German web agency and on my own. I turn Figma into fast, responsive, CMS-driven sites on a clean Client-First system, with an AI-assisted workflow that keeps every build consistent.</p>
                   <div class="button-group" data-anim="hero-side">
                     <a href="#work" class="button is-large">
                       <span class="button_text">See selected work</span>
-                      <span class="button_icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg></span>
+                      <span class="button_icon is-down" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg></span>
                     </a>
                     <a href="assets/files/jaymart-alayon-resume.pdf" class="button is-secondary is-large" target="_blank" rel="noopener"><span class="button_text">View my résumé</span></a>
                   </div>
@@ -107,45 +107,27 @@
         </div>
       </header>
 
-      <!-- ============ Showcase marquee ============ -->
-      <section class="section_showcase" aria-label="Project previews">
-        <div class="padding-section-small is-top-none">
-          <div class="showcase_component" data-anim="card">
-            <div class="showcase_group">
-              <a class="showcase_item" href="#work-veylor"><img class="showcase_image" src="assets/img/veylor-capital-partners.webp" alt="Veylor Capital Partners homepage" width="1200" height="750" loading="lazy"></a>
-              <a class="showcase_item" href="#work-northwatch"><img class="showcase_image" src="assets/img/northwatch-safety.webp" alt="Northwatch Safety homepage" width="1200" height="750" loading="lazy"></a>
-              <a class="showcase_item" href="#work-dunebright"><img class="showcase_image" src="assets/img/dunebright-solar.webp" alt="Dunebright Solar homepage" width="1200" height="750" loading="lazy"></a>
-              <a class="showcase_item" href="#work-nocta"><img class="showcase_image" src="assets/img/nocta-events.webp" alt="NOCTA Events homepage" width="1200" height="750" loading="lazy"></a>
-              <a class="showcase_item" href="#work-apsis"><img class="showcase_image" src="assets/img/apsis-space-intelligence.webp" alt="Apsis homepage" width="1200" height="750" loading="lazy"></a>
-              <a class="showcase_item" href="#work-larkspur"><img class="showcase_image" src="assets/img/larkspur-salon.webp" alt="Larkspur Salon homepage" width="1200" height="750" loading="lazy"></a>
-              <a class="showcase_item" href="#work-kestrel"><img class="showcase_image" src="assets/img/kestrel-point-advisors.webp" alt="Kestrel Point Advisors homepage" width="1200" height="750" loading="lazy"></a>
-              <a class="showcase_item" href="#work-cedarline"><img class="showcase_image" src="assets/img/cedarline-sitework.webp" alt="Cedarline Sitework homepage" width="1200" height="750" loading="lazy"></a>
-              <a class="showcase_item" href="#work-tessarc"><img class="showcase_image" src="assets/img/tessarc-autonomy-testing.webp" alt="Tessarc homepage" width="1200" height="750" loading="lazy"></a>
-            </div>
-            <div class="showcase_group" aria-hidden="true">
-              <a class="showcase_item" href="#work-veylor" tabindex="-1"><img class="showcase_image" src="assets/img/veylor-capital-partners.webp" alt="" width="1200" height="750" loading="lazy"></a>
-              <a class="showcase_item" href="#work-northwatch" tabindex="-1"><img class="showcase_image" src="assets/img/northwatch-safety.webp" alt="" width="1200" height="750" loading="lazy"></a>
-              <a class="showcase_item" href="#work-dunebright" tabindex="-1"><img class="showcase_image" src="assets/img/dunebright-solar.webp" alt="" width="1200" height="750" loading="lazy"></a>
-              <a class="showcase_item" href="#work-nocta" tabindex="-1"><img class="showcase_image" src="assets/img/nocta-events.webp" alt="" width="1200" height="750" loading="lazy"></a>
-              <a class="showcase_item" href="#work-apsis" tabindex="-1"><img class="showcase_image" src="assets/img/apsis-space-intelligence.webp" alt="" width="1200" height="750" loading="lazy"></a>
-              <a class="showcase_item" href="#work-larkspur" tabindex="-1"><img class="showcase_image" src="assets/img/larkspur-salon.webp" alt="" width="1200" height="750" loading="lazy"></a>
-              <a class="showcase_item" href="#work-kestrel" tabindex="-1"><img class="showcase_image" src="assets/img/kestrel-point-advisors.webp" alt="" width="1200" height="750" loading="lazy"></a>
-              <a class="showcase_item" href="#work-cedarline" tabindex="-1"><img class="showcase_image" src="assets/img/cedarline-sitework.webp" alt="" width="1200" height="750" loading="lazy"></a>
-              <a class="showcase_item" href="#work-tessarc" tabindex="-1"><img class="showcase_image" src="assets/img/tessarc-autonomy-testing.webp" alt="" width="1200" height="750" loading="lazy"></a>
-            </div>
+      <!-- ============ Tools marquee: two rows, speed follows scroll velocity (assets/js/scroll-velocity.js) ============ -->
+      <section class="section_tools" aria-label="Tools I build with">
+        <div class="tools_component" data-scroll-velocity="1">
+          <div class="tools_track">
+            <ul class="tools_group">
+            <li class="tools_item">Webflow</li><li class="tools_item">Client-First</li><li class="tools_item">Figma</li><li class="tools_item">GSAP</li><li class="tools_item">Finsweet Attributes</li><li class="tools_item">Webflow CMS</li><li class="tools_item">Claude Code</li><li class="tools_item">Webflow MCP</li><li class="tools_item">Lottie</li><li class="tools_item">Relume</li>
+            </ul>
+            <ul class="tools_group" aria-hidden="true">
+            <li class="tools_item">Webflow</li><li class="tools_item">Client-First</li><li class="tools_item">Figma</li><li class="tools_item">GSAP</li><li class="tools_item">Finsweet Attributes</li><li class="tools_item">Webflow CMS</li><li class="tools_item">Claude Code</li><li class="tools_item">Webflow MCP</li><li class="tools_item">Lottie</li><li class="tools_item">Relume</li>
+            </ul>
           </div>
         </div>
-      </section>
-
-      <!-- ============ Tools marquee ============ -->
-      <section class="section_tools" aria-label="Tools I build with">
-        <div class="tools_component">
-          <ul class="tools_group">
+        <div class="tools_component is-reverse" data-scroll-velocity="-1" aria-hidden="true">
+          <div class="tools_track">
+            <ul class="tools_group">
             <li class="tools_item">Webflow</li><li class="tools_item">Client-First</li><li class="tools_item">Figma</li><li class="tools_item">GSAP</li><li class="tools_item">Finsweet Attributes</li><li class="tools_item">Webflow CMS</li><li class="tools_item">Claude Code</li><li class="tools_item">Webflow MCP</li><li class="tools_item">Lottie</li><li class="tools_item">Relume</li>
-          </ul>
-          <ul class="tools_group" aria-hidden="true">
+            </ul>
+            <ul class="tools_group">
             <li class="tools_item">Webflow</li><li class="tools_item">Client-First</li><li class="tools_item">Figma</li><li class="tools_item">GSAP</li><li class="tools_item">Finsweet Attributes</li><li class="tools_item">Webflow CMS</li><li class="tools_item">Claude Code</li><li class="tools_item">Webflow MCP</li><li class="tools_item">Lottie</li><li class="tools_item">Relume</li>
-          </ul>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -660,10 +642,25 @@
       <div class="modal_body" id="modal-body"></div>
     </dialog>
 
+    <!-- Project modal: filled with the clicked work card by card-swap.js -->
+    <dialog class="modal_component modal_project" id="project-modal" aria-labelledby="project-modal-title">
+      <div class="modal_header">
+        <h2 class="heading-style-h5" id="project-modal-title" data-project-title>Project</h2>
+        <button class="modal_close" type="button" aria-label="Close project"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+      </div>
+      <div class="modal_project-body" data-project-body></div>
+    </dialog>
+
   </div>
 
   <script src="assets/js/projects.js"></script>
   <script src="assets/js/shape-grid.js"></script>
+  <script src="assets/js/splash-cursor.js"></script>
+  <script src="assets/js/specular-buttons.js"></script>
+  <script src="assets/js/scroll-velocity.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/card-swap.js"></script>
+  <script src="assets/js/tilted-cards.js"></script>
+  <script src="assets/js/gooey-nav.js"></script>
 </body>
 </html>

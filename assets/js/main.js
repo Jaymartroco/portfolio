@@ -26,10 +26,10 @@
     var hasVideo = !!(p.video && p.video.trim());
     slot.innerHTML =
       '<a class="button" href="' + esc(p.url) + '" target="_blank" rel="noopener">' +
-        '<span class="button_text">View live export</span><span class="button_icon" aria-hidden="true">' + arrowIcon + "</span></a>" +
+        '<span class="button_text">View live export</span><span class="button_icon is-diagonal" aria-hidden="true">' + arrowIcon + "</span></a>" +
       (hasVideo
         ? '<button class="button is-secondary" type="button" data-video="' + esc(p.video) + '" data-name="' + esc(p.name) + '">' +
-            '<span class="button_icon" aria-hidden="true">' + playIcon + '</span><span class="button_text">Designer walkthrough</span></button>'
+            '<span class="button_icon is-play" aria-hidden="true">' + playIcon + '</span><span class="button_text">Designer walkthrough</span></button>'
         : '<span class="work_soon">' + playIcon + " Designer walkthrough coming soon</span>");
   });
 
@@ -79,12 +79,7 @@
       if (e.key === "Escape" && nav.classList.contains("is-open")) { setMenu(false); toggle.focus(); }
     });
   }
-  var lastY = window.scrollY;
-  window.addEventListener("scroll", function () {
-    var y = window.scrollY;
-    if (nav && !nav.classList.contains("is-open")) nav.classList.toggle("is-hidden", y > lastY && y > 400);
-    lastY = y;
-  }, { passive: true });
+  /* The nav stays fixed and visible at all times (no hide-on-scroll), so the gooey pill is always in view. */
 
   /* Current section highlight (Webflow adds w--current for same-page anchors) */
   var links = document.querySelectorAll(".nav_link[href^='#']");
