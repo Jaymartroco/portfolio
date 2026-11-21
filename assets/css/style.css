@@ -290,6 +290,10 @@ button { font: inherit; color: inherit; }
 .hero_component { position: relative; z-index: 1; }
 .hero_glow { position: absolute; z-index: 0; top: -18rem; left: 50%; width: 70rem; height: 40rem; transform: translateX(-50%); background: radial-gradient(closest-side, rgba(212, 255, 58, 0.14), rgba(212, 255, 58, 0)); pointer-events: none; }
 .hero_grid { position: absolute; inset: 0; z-index: 0; background-image: linear-gradient(var(--color-scheme-1--border) 1px, transparent 1px), linear-gradient(90deg, var(--color-scheme-1--border) 1px, transparent 1px); background-size: 5rem 5rem; -webkit-mask-image: radial-gradient(ellipse 60% 55% at 50% 30%, #000 20%, transparent 75%); mask-image: radial-gradient(ellipse 60% 55% at 50% 30%, #000 20%, transparent 75%); opacity: 0.6; pointer-events: none; }
+/* Animated shape grid (assets/js/shape-grid.js). The CSS grid above is the no-JS fallback. */
+.hero_grid.is-canvas { background-image: none; opacity: 0; transition: opacity 1.2s ease; -webkit-mask-image: radial-gradient(ellipse 70% 65% at 50% 35%, #000 25%, transparent 80%); mask-image: radial-gradient(ellipse 70% 65% at 50% 35%, #000 25%, transparent 80%); }
+.hero_grid.is-canvas.is-ready { opacity: 1; }
+.hero_grid canvas { display: block; }
 .hero_heading .text-style-italic { font-family: "Instrument Serif", Georgia, serif; letter-spacing: -0.03em; }
 .hero_bottom { display: grid; grid-template-columns: 1fr auto; align-items: end; gap: var(--size--48-32); }
 .hero_stats { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; border-top: var(--stroke--divider-width) solid var(--color-scheme-1--border); }
